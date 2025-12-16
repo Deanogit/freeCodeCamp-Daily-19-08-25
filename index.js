@@ -13,3 +13,10 @@ function sumOfSquares(n) {
 
   return counter;
 }
+
+// one liner
+const sumOfSquares = (n) =>
+  Array.from({ length: n }, (_, i) => (i + 1) ** 2).reduce(
+    (sum, sq) => sum + sq,
+    0
+  );
